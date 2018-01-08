@@ -1,4 +1,4 @@
-package com.lambdabasics;
+package com.lambdabasics.model;
 
 public class Person {
 	private String firstName;

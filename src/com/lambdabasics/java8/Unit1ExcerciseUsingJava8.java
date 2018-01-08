@@ -1,8 +1,11 @@
-package com.lambdabasics;
+package com.lambdabasics.java8;
 
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+
+import com.lambdabasics.interfaces.Condition;
+import com.lambdabasics.model.Person;
 
 public class Unit1ExcerciseUsingJava8 {
 
@@ -12,7 +15,8 @@ public class Unit1ExcerciseUsingJava8 {
 				new Person("bhargav", "epuri", 26),
 				new Person("vinay", "kuchampudi", 28),
 				new Person("samuel", "vangara", 30),
-				new Person("kevin", "kasha", 50)
+				new Person("kevin", "kasha", 50),
+				new Person("rakesh", "gubbala", 34)
 				);
 		
 		//Step1: Sort List by lastName
@@ -23,12 +27,12 @@ public class Unit1ExcerciseUsingJava8 {
 		printConditionally(people, (p) -> true);
 		
 		//Step3: Create a method that prints all the elements lastName starting with k
-		System.out.println("Printing all the elements lastName starting with k");
+		System.out.println("\nPrinting all the elements lastName starting with k");
 		printConditionally(people, (p) -> p.getLastName().startsWith("k"));
 		
-		//Step3: Create a method that prints all the elements firstName starting with c
-		System.out.println("Printing all the elements lastName starting with v");
-		printConditionally(people, (Person p) -> p.getFirstName().startsWith("v"));
+		//Step4: Create a method that prints all the elements firstName starting with s
+		System.out.println("\nPrinting all the elements lastName starting with s");
+		printConditionally(people, (Person p) -> p.getFirstName().startsWith("s"));
 		
 	}
 	
